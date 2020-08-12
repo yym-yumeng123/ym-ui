@@ -8,3 +8,13 @@
    // new Vue({tempalte, render})
    new Vue()
    ``` 
+
+
+### 命令行
+```
+// 查看所有版本号
+npm info vue-router versions
+
+// 安装对应最新版本
+yarn add vue-router@4.0.0-beta.6
+```
