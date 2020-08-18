@@ -1,15 +1,10 @@
 <template>
   <div>Hi</div>
-  <Test />
+  <router-view />
 </template>
 
 <script>
-import Test from './components/test.vue'
-
 export default {
   name: 'App',
-  components: {
-    Test
-  }
 }
 </script>
