@@ -1,6 +1,7 @@
 import { createApp } from "vue"
 import App from "./App.vue"
-import Test from './components/test.vue'
+import Home from './views/Home.vue'
+import Doc from './views/Doc.vue'
 import "./index.css"
 
 // hash 模式
@@ -12,7 +13,11 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      component: Test
+      component: Home
+    },
+    {
+      path: '/doc',
+      component: Doc
     }
   ]
 })
