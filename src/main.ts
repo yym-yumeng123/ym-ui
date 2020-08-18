@@ -2,7 +2,8 @@ import { createApp } from "vue"
 import App from "./App.vue"
 import Home from './views/Home.vue'
 import Doc from './views/Doc.vue'
-import "./index.css"
+import './styles/reset.scss'
+import "./index.scss"
 
 // hash 模式
 import { createWebHashHistory, createRouter } from "vue-router"

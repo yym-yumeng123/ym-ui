@@ -14,3 +14,10 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.topnav {
+  height: 60px;
+  border: 1px solid red;
+}
+</style>
