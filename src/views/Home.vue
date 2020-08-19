@@ -5,8 +5,8 @@
       <h1>UI组件库</h1>
       <h2>Vue3 UI 组件库</h2>
       <p class="actions">
-        <a href="">Github</a>
-        <a href="">开始</a>
+        <a href="https://github.com/yym-yumeng123/ym-ui">Github</a>
+        <router-link to="/doc">开始</router-link>
       </p>
     </div>
   </div>
