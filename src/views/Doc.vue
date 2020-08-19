@@ -28,7 +28,7 @@ export default {
   },
   setup() {
     const asideVisible = inject<Ref<boolean>>("asideVisible")
-    return { asideVisible}
+    return { asideVisible }
   },
 }
 </script>
@@ -36,14 +36,9 @@ export default {
 <style lang="scss" scoped>
 .content {
   aside {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 150px;
     padding: 16px;
-    padding-top: 70px;
     background: lightseagreen;
-
     > h2 {
       margin-bottom: 4px;
     }
@@ -51,6 +46,13 @@ export default {
       > li {
         padding: 4px 0;
       }
+    }
+
+    @media (max-width: 500px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 70px;
     }
   }
 }
