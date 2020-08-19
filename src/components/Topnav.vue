@@ -17,6 +17,8 @@ export default {
 <style lang="scss" scoped>
 .topnav {
   display: flex;
+  position: relative;
+  z-index: 10;
   padding: 16px;
   background: pink;
   > .logo {

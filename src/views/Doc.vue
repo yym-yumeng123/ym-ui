@@ -27,3 +27,27 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.content {
+  aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    padding: 16px;
+    padding-top: 70px;
+    background: lightseagreen;
+
+    > h2 {
+      margin-bottom: 4px;
+
+    }
+    > ol {
+      > li {
+        padding: 4px 0;
+      }
+    }
+  }
+}
+</style>
