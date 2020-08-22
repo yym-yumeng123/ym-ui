@@ -1,27 +1,9 @@
 import { createApp } from "vue"
 import App from "./App.vue"
-import Home from './views/Home.vue'
-import Doc from './views/Doc.vue'
-import './styles/reset.scss'
+import router from "./router"
+
+import "./styles/reset.scss"
 import "./index.scss"
-
-// hash 模式
-import { createWebHashHistory, createRouter } from "vue-router"
-
-const history = createWebHashHistory()
-const router = createRouter({
-  history,
-  routes: [
-    {
-      path: '/',
-      component: Home
-    },
-    {
-      path: '/doc',
-      component: Doc
-    }
-  ]
-})
 
 const app = createApp(App)
 app.use(router)

@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import Topnav from '../components/Topnav.vue'
+import Topnav from "../components/Topnav.vue"
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Topnav
-  }
+    Topnav,
+  },
 }
 </script>
 
@@ -28,7 +28,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 0; 
+  padding: 100px 0;
   background: lightgreen;
   > .actions {
     padding: 8px 0;
@@ -37,12 +37,11 @@ export default {
       height: 28px;
       line-height: 28px;
       border-radius: 14px;
-      
+
       margin: 0 8px;
       padding: 0 8px;
       background: #fff;
     }
-
   }
 }
 </style>
