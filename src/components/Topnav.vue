@@ -1,6 +1,8 @@
 <template>
   <div class="topnav">
-    <div class="logo">Logo</div>
+    <div class="logo">
+      <router-link to="/">logo</router-link>
+    </div>
     <ul class="menu">
       <li>菜单-2</li>
       <li>菜单-1</li>
@@ -26,11 +28,16 @@ export default {
 
 <style lang="scss" scoped>
 .topnav {
-  display: flex;
-  position: relative;
-  z-index: 10;
-  padding: 16px;
   background: pink;
+  display: flex;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
   > .logo {
     max-width: 6em;
     margin-right: auto;
@@ -39,22 +46,21 @@ export default {
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
+    margin-right: 1em;;
     > li {
       margin: 0 1em;
     }
   }
-
   > .toggleAside {
-    display: none;
+    width: 24px;
+    height: 24px;
+    background: red;
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
-    border: 1px solid red;
+    display: none;
   }
-
   @media (max-width: 500px) {
     > .menu {
       display: none;
@@ -63,7 +69,7 @@ export default {
       margin: 0 auto;
     }
     > .toggleAside {
-      display: block;
+      display: inline-block;
     }
   }
 }
