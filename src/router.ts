@@ -1,7 +1,7 @@
 import Home from "./views/Home.vue"
 import Doc from "./views/Doc.vue"
 import List from './views/List.vue'
-import Switch from "./views/Switch.vue"
+import SwitchDemo from "./views/SwitchDemo.vue"
 import Button from "./views/Button.vue"
 
 // hash 模式
@@ -25,7 +25,7 @@ const router = createRouter({
         },
         {
           path: "switch",
-          component: Switch,
+          component: SwitchDemo,
         },
         {
           path: "button",
