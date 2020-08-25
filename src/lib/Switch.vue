@@ -33,6 +33,7 @@ button {
   border: none;
   border-radius: $outerHeight / 2;
   background: #ccc;
+  transition: background .5s;
 
   span {
     position: absolute;
@@ -42,6 +43,7 @@ button {
     height: $insideHeight;
     border-radius: $insideHeight / 2;
     background: #fff;
+    transition: left .5s;
   }
 
   &.checked {
