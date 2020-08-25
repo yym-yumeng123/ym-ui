@@ -29,5 +29,11 @@ button {
     border-radius: $insideHeight / 2;
     background: #fff;
   }
+
+  &:hover {
+    >span {
+      left: calc(100% - #{$insideHeight} - 2px);
+    }
+  }
 }
 </style>
