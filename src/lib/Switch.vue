@@ -8,14 +8,19 @@ import {
 } from "vue"
 export default {
   name: "Switch",
-  setup(props) {
-    const checked = ref(false)
+  props: {
+    checked: {
+      type: Boolean,
+      default: true
+    },
+  },
+  setup(props, context) {
     const toggle = () => {
-      checked.value = !checked.value
+      // 当前值取反 change 事件发给父元素
+      context.emit('change', !props.checked)
     }
 
     return {
-      checked,
       toggle,
     }
   },
@@ -33,7 +38,7 @@ button {
   border: none;
   border-radius: $outerHeight / 2;
   background: #ccc;
-  transition: background .5s;
+  transition: background 0.5s;
 
   span {
     position: absolute;
@@ -43,7 +48,7 @@ button {
     height: $insideHeight;
     border-radius: $insideHeight / 2;
     background: #fff;
-    transition: left .5s;
+    transition: left 0.5s;
   }
 
   &.checked {
