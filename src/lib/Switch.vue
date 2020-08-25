@@ -17,7 +17,7 @@ export default {
   setup(props, context) {
     const toggle = () => {
       // 当前值取反 change 事件发给父元素
-      context.emit('change', !props.checked)
+      context.emit('update:checked', !props.checked)
     }
 
     return {
