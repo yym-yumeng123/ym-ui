@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Button />
+    <Button>slot 插槽</Button>
   </div>
 </template>
 
