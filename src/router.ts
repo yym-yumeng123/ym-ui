@@ -2,7 +2,7 @@ import Home from "./views/Home.vue"
 import Doc from "./views/Doc.vue"
 import List from './views/List.vue'
 import SwitchDemo from "./views/SwitchDemo.vue"
-import Button from "./views/Button.vue"
+import ButtonDemo from "./views/ButtonDemo.vue"
 
 // hash 模式
 import { createWebHashHistory, createRouter } from "vue-router"
@@ -29,7 +29,7 @@ const router = createRouter({
         },
         {
           path: "button",
-          component: Button,
+          component: ButtonDemo,
         },
       ],
     },
